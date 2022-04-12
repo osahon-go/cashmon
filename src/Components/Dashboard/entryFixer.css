@@ -1,0 +1,26 @@
+.entryPicker {
+  border: none !important;
+  width: calc(100% - 5px) !important;
+  border-bottom: 1px solid #bdc3c7 !important;
+  font-family: "Work Sans", sans-serif;
+  margin: 15px 0 20px 0;
+  outline: none;
+  text-align: center;
+  background-color: transparent;
+}
+
+.react-datepicker__month-container {
+  width: 100%;
+  float: right !important;
+  background-color: #f9f9f9 !important;
+}
+
+.react-datepicker-popper {
+  width: 100% !important;
+  background-color: #f9f9f9;
+  top: 0 !important;
+}
+
+.react-datepicker {
+  width: 100% !important;
+}
