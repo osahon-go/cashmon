@@ -2,6 +2,10 @@
 
 **Version 0.1.0**
 
+<p align="center">
+<img src="https://api.netlify.com/api/v1/badges/5fecf93c-51c7-434c-9b71-619b1fd9d2e2/deploy-status"/>
+</p>
+
 This is a simple expense tracker I created for managing my expenses
 
 ---
