@@ -1,6 +1,6 @@
 # Cashmon
 
-**Version 1.0.0**
+**Version 0.1.0**
 
 This is a simple expense tracker I created for managing my expenses
 
