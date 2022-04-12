@@ -39,7 +39,7 @@ function Login({ showing }) {
     };
 
     axios
-      .get("http://localhost:3001/findEmail", {
+      .get("https://cashmonitor.herokuapp.com/findEmail", {
         params: { email: email },
       })
       .then((response) => {
@@ -48,7 +48,7 @@ function Login({ showing }) {
           return alert("User not found. Please join");
         const hashPass = bcrypt.hashSync(password, response.data);
         axios
-          .get("http://localhost:3001/logIn", {
+          .get("https://cashmonitor.herokuapp.com/logIn", {
             params: { email, hashPass },
           })
           .then((response) => {

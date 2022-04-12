@@ -27,7 +27,9 @@ function Select() {
   //Auto load Budgets
   useEffect(() => {
     const user = localStorage.getItem("cashmon-user");
-    Axios.get("http://localhost:3001/load", { params: { id: user } })
+    Axios.get("https://cashmonitor.herokuapp.com/load", {
+      params: { id: user },
+    })
       .then((response) => {
         setBudgets(response.data);
         setLoading(true);

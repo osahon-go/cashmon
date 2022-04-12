@@ -64,7 +64,7 @@ const Expense = ({ dataFile, totalExpense, handleDelete, handleEdit }) => {
       filterText == "All"
         ? setFilteredExpenses(null)
         : axios
-            .get("http://localhost:3001/filterExpenses", {
+            .get("https://cashmonitor.herokuapp.com/filterExpenses", {
               params: { val: e.target.value, id: id },
             })
             .then((response) => {

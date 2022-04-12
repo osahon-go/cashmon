@@ -72,7 +72,9 @@ function Dashboard() {
     const activeUser = localStorage.getItem("cashmon-user");
     if (!activeUser) return navigate("/", { replace: true });
     axios
-      .get("http://localhost:3001/budgetDetails", { params: { id: id } })
+      .get("https://cashmonitor.herokuapp.com/budgetDetails", {
+        params: { id: id },
+      })
       .then((response) => {
         const expenses = response.data.expenses;
         setExpensesData(expenses);
@@ -167,7 +169,9 @@ function Dashboard() {
       details: details,
     };
     axios
-      .post("http://localhost:3001/updateExpense", { values: values })
+      .post("https://cashmonitor.herokuapp.com/updateExpense", {
+        values: values,
+      })
       .then((response) => {
         const stat = response.data.status;
         const totalExpense = response.data.result.sum;
@@ -211,7 +215,9 @@ function Dashboard() {
   const handleDelete = (e) => {
     const id = e;
     axios
-      .get("http://localhost:3001/deleteEntry", { params: { id: id } })
+      .get("https://cashmonitor.herokuapp.com/deleteEntry", {
+        params: { id: id },
+      })
       .then((response) => {
         if (response.data == "Deleted") {
           setAction(!action);
@@ -233,7 +239,7 @@ function Dashboard() {
   const goDelete = (e) => {
     const id = e;
     axios
-      .post("http://localhost:3001/deleteBudget", { value: id })
+      .post("https://cashmonitor.herokuapp.com/deleteBudget", { value: id })
       .then((response) => {
         if (response.data.action == "successful") {
           navigate("/select", { replace: true });

@@ -149,7 +149,7 @@ function SetBudget() {
       userID: user,
     };
     axios
-      .post("http://localhost:3001/Budget", values)
+      .post("https://cashmonitor.herokuapp.com/Budget", values)
       .then((response) => {
         if (response.status != 200) {
         } else {

@@ -62,7 +62,7 @@ function Signup({ showing, data }) {
       sh: salt,
     };
     axios
-      .post("http://localhost:3001/createUser", values)
+      .post("https://cashmonitor.herokuapp.com/createUser", values)
       .then((response) => {
         const stat = response.data;
         switch (stat.status) {
