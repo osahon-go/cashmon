@@ -2,9 +2,9 @@
 
 **Version 0.1.0**
 
-<p align="left">
-<img src="https://api.netlify.com/api/v1/badges/5fecf93c-51c7-434c-9b71-619b1fd9d2e2/deploy-status"/> <a href="https://nohaso-cm.netlify.app">View Site</a>
-</p>
+<a href="https://app.netlify.com/sites/nohaso-cm/deploys">
+<img src="https://api.netlify.com/api/v1/badges/5fecf93c-51c7-434c-9b71-619b1fd9d2e2/deploy-status"/>
+</a>
 
 This is a simple expense tracker I created for managing my expenses
 
