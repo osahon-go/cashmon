@@ -21,14 +21,8 @@ This is a simple budget app / expense tracker I created for managing my expenses
 
 ---
 
-## Contributors
-
-- Osahon Ohenhen <hey@nohaso.com>
-
----
-
 ## License & copyright
 
-© Osahon Ohenhen, Nohaso
+© Osahon Ohenhen, osahon-go
 
 Licensed under the [MIT license](LICENSE).
